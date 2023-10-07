@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Music_Conserts</title>
+    <link rel="shortcut icon" href="https://cdn-icons-png.flaticon.com/128/5979/5979351.png" type="image/x-icon">
+    <style>
+    
+        @import url('https://fonts.googleapis.com/css2?family=Bodoni+Moda:opsz,wght@6..96,400;6..96,900&family=Inclusive+Sans&family=Luckiest+Guy&display=swap');
+
+        *{
+            margin: 0;
+            padding:0 ;
+            box-sizing: border-box;
+
+        }
+        :root{
+            --font-color:rgb(255, 255, 255);
+            --bg-color:black;
+            --box-color:#333;
+        }
+        .head{
+            font-size: 15px;
+            color: var(--font-color);
+            /* padding:0.5rem; */
+            border: none;
+            /* width: 100vw; */
+            height: 20px;
+            display: flex;
+            justify-content: flex-end;
+            gap: 20px;
+            background-color: black;
+
+        }
+        #span3{
+            margin-right: 30px;
+        }
+        .icon{
+            height: 16px;
+            width: auto;
+        }
+        .nav{
+            background-color: #eee;
+            border: none;
+            width: 100vw;
+            height: 60px;
+            
+        }
+        .nav2{
+
+            display:flex ;
+            justify-content:flex-end;
+            align-items: center;
+            gap: 40px;
+        }
+        .navigation{
+            color: rgba(0, 0, 0, 0.537);
+            padding-left: 40px;
+            margin: 20px;
+            font-family: 'Luckiest Guy', cursive;
+        }
+        #icon2{
+            width: auto;
+            height: 50px;
+            position: absolute;
+            left: 15px;
+            animation-name: Icon;
+            animation-duration: 5s;
+            animation-iteration-count: infinite;
+            animation-delay: 0ms;
+            animation-direction: alternate;
+            animation-timing-function: linear;
+            border: none solid black;
+        }
+        @keyframes Icon{
+            0%{
+                left: 15px;
+                top: 20px;
+            }
+            100%{
+                left:520px;
+                top: 20px;
+            }
+        }
+        .bgimage{
+            height: 550px;
+            width: 100%;
+            position: absolute;
+            z-index: 1;
+            opacity:1 ;
+            
+        }
+        .container{
+            position: relative;
+            z-index: 3;
+            height: 550px;
+            color: black;
+            /* background-color: #cccccc; */
+            background-image: url();
+            background-repeat: no-repeat;
+            /* background-blend-mode:hard-light; */
+            /* backdrop-filter: blur(20px); */
+            background-size: cover;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-evenly;
+            /* left: 15%; */
+        }
+        .para3{
+            
+            margin-left: 200px;
+        }
+        #para1{
+            font-family: 'Luckiest Guy', cursive;
+            color: rgb(165, 132, 214);
+            font-size: 40px;
+            cursor: pointer;
+            transition: all 1.5s linear;
+        }
+        #para1:hover{
+            font-size: 40.5px;
+            color: aquamarine;
+            text-shadow: 5px 10px 2px rgb(247, 245, 245,0.8);
+        }
+        
+        .txt{
+            z-index: 4;
+            background-image: url(https://c4.wallpaperflare.com/wallpaper/291/819/697/illustration-city-anime-painting-wallpaper-preview.jpg);
+            background-size: cover;
+            text-transform: capitalize;
+            /* transform: translateY(-50%); */
+            /* mix-blend-mode:overlay; */
+                -webkit-text-fill-color: transparent;
+                -webkit-background-clip: text;
+                text-shadow: 7px 10px 2px rgb(247, 245, 245,0.2);
+            font-family: 'Luckiest Guy', cursive;
+            font-size: 4vw;
+            color: rgb(255, 255, 255,0.7);
+            position: relative;
+            /* -webkit-text-fill-color: transparent; */
+            cursor: pointer;
+            transition: all 2s linear;
+        }
+        txt:hover{
+            font-size: 5vw;
+            color:aqua;
+            transform: scale(1.1)
+            
+            
+        }
+        #para{
+            color: rgb(246, 235, 235);
+            width: 750px;
+            background-color: rgba(254, 254, 254, 0.4);
+            border-radius: 7px;
+            box-shadow: 1px 1px 2px 1px rgb(255, 255, 255,0.6);
+        }
+        #para5{
+            color: rgb(165, 132, 214);;
+            font-family: 'Luckiest Guy', cursive;
+            font-size: 30px;
+            margin-bottom: 0;
+        }
+        #para6{
+            font-weight: 500;
+            color: rgb(253, 249, 249);
+            margin-bottom: 10px;
+        }
+        .foot{
+            color: aliceblue;
+            background-color: black;
+            width: 100%;
+            height: 155px;
+            border-top: none solid rgb(235, 235, 235 ,0.4);
+            position: relative;
+            bottom: 0;
+            display: flex;
+            justify-content: center;
+            align-items: flex-end;
+            gap: 80px;
+            /* row-gap: 15px; */
+        }
+        .box{
+            color:var(--box-color) ;
+            background-color:var(--box-color);
+            padding: 20px;
+            margin-bottom: 10px;
+            height: 100px;
+            width: 150px;
+            border: 2px solid rgb(255, 255, 255,0.1);
+            border-radius: 20px;
+            box-shadow:-1px -1px 5px 1px rgb(240, 239, 239) ;
+            cursor: pointer;
+            transition: all 1.5s ease;
+        }
+        .box:hover{
+            font-family: 'Luckiest Guy', cursive;
+            width: 240px;
+            color: aqua;
+            box-shadow: -4px -4px 7px 2px rgb(240, 239, 239);
+            transform: rotateY(360);
+            transform: scale(1.1);
+            background-color:rgb(149, 81, 221);
+        }
+    
+        
+        #position{
+            margin-top: 5px;
+            font-family:'Luckiest Guy', cursive;
+            position: absolute;
+            align-self: flex-start;
+        }
+    </style>
+</head>
+<body>
+    <header class="head">
+        <img class="icon" src="https://t4.ftcdn.net/jpg/02/97/46/91/240_F_297469193_ee9n6asShENUNS3MAos61qdz6zYf6Tcb.jpg" alt="facebook-icon">
+        <span>English</span>
+        <span>My Page </span>
+        <span id="span3">Layout</span>
+    </header>
+    <nav class="nav">
+        <ul type="none" class="nav2">
+            <img class="" id="icon2" src="https://img.icons8.com/?size=96&id=Kh9EyY8ageb7&format=png" alt="icon2">
+            <li class="navigation">Home</li>
+            <li class="navigation">Trending</li>
+            <li class="navigation">Album</li>
+            <li class="navigation">liked songs</li>
+            <li class="navigation">playlist</li>
+        </ul>
+    </nav>
+    <img class="bgimage" src="https://media.istockphoto.com/id/1263655048/photo/abstract-galaxy-with-shiny-stars-and-colorful-clouds.webp?b=1&s=170667a&w=0&k=20&c=T7AUhhuU8UzthH9eHXHJuN7fKXqH8NvjVM1uEaQjqac=" alt="00">
+    <main class="container">
+        
+        <p class="para3"  id="para1">"Hello! Music Lovers"</p>
+        <p class="para3 txt" > THE </p>
+        <p class="para3 txt" >MUSICAL EVENTE OF THE YEAR</p>
+        <p class="para3 txt" >2023</p>
+        <p class="para3" id="para">Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed, obcaecati illo eius  voluptatibus perferendis culpa reprehenderit soluta voluptatem numquam, eveniet veritatis voluptas facilis temporibus voluptatum.</p>
+        <p class="para3" id="para5" >2023.12.12(THU)~13(FRI)</p>
+        <p class="para3" id="para6">@National Museam Of North Korea,Art Center And More</p>
+    </main>
+    <footer class="foot">
+        <div class="box">Lorem ipsum dolor sit amet consectetur adipisicing elit. </div>
+        <div class="box">Lorem ipsum dolor sit amet consectetur adipisicing elit.</div>
+        <p id="position">Main programs</p>
+        <div class="box">Lorem, ipsum dolor sit amet consectetur adipisicing elit.</div>
+        <div class="box">Lorem, ipsum dolor sit amet consectetur adipisicing elit.</div>
+    </footer>
+</body>
+</html>
